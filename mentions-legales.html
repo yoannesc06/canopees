@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentions légales — Canopées</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .legal-page {
+        padding: 5rem 0 6rem;
+      }
+      .legal-page h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 0.5rem;
+      }
+      .legal-page .eyebrow {
+        margin-bottom: 0.5rem;
+      }
+      .legal-intro {
+        color: var(--text-light);
+        margin-bottom: 3rem;
+        font-size: 0.95rem;
+      }
+      .legal-section {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+      .legal-section:last-child {
+        border-bottom: none;
+      }
+      .legal-section h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text);
+      }
+      .legal-section h3 {
+        font-size: 1.05rem;
+        font-weight: 500;
+        margin: 1.25rem 0 0.5rem;
+        color: var(--text);
+      }
+      .legal-section p {
+        color: var(--text-light);
+        line-height: 1.75;
+        margin-bottom: 0.75rem;
+      }
+      .legal-section p:last-child {
+        margin-bottom: 0;
+      }
+      .legal-section a {
+        color: var(--green);
+        text-decoration: underline;
+      }
+      .legal-breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--text-light);
+        margin-bottom: 2rem;
+      }
+      .legal-breadcrumb a {
+        color: var(--green);
+        text-decoration: none;
+      }
+      .legal-breadcrumb a:hover {
+        text-decoration: underline;
+      }
+      .legal-breadcrumb span {
+        opacity: 0.5;
+      }
+      .legal-nav {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+      }
+      .legal-nav a {
+        padding: 0.5rem 1.25rem;
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: var(--text-light);
+        transition: all 0.2s;
+      }
+      .legal-nav a:hover,
+      .legal-nav a.active {
+        border-color: var(--green);
+        color: var(--green);
+        background: rgba(74, 103, 65, 0.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-logo">
+        <a
+          href="index.html"
+          style="
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: inherit;
+          "
+        >
+          <img
+            src="images/logo.png"
+            alt="Canopées"
+            style="height: 48px; width: auto"
+          />
+        </a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+        <li><a href="prestations.html">Prestations</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="contact.php" class="nav-cta">Contact & Devis</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container legal-page">
+        <div class="legal-breadcrumb">
+          <a href="index.html">Accueil</a>
+          <span>›</span>
+          <span>Mentions légales</span>
+        </div>
+
+        <span class="eyebrow">Informations légales</span>
+        <h1>Mentions légales</h1>
+        <p class="legal-intro">
+          Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004
+          pour la confiance en l'économie numérique.
+        </p>
+
+        <div class="legal-nav">
+          <a href="mentions-legales.html" class="active">Mentions légales</a>
+          <a href="cgu.html">CGU</a>
+          <a href="cgv.html">CGV</a>
+        </div>
+
+        <div class="legal-section">
+          <h2>1. Éditeur du site</h2>
+          <p>
+            Le site <strong>canopees.fr</strong> est édité par la société
+            Canopées SAS, société par actions simplifiée au capital de 10 000 €,
+            immatriculée au Registre du Commerce et des Sociétés de Toulouse
+            sous le numéro SIRET <strong>123 456 789 00010</strong>.
+          </p>
+          <h3>Siège social</h3>
+          <p>12 Allée des Jardins<br />31000 Toulouse<br />France</p>
+          <h3>Directeurs de la publication</h3>
+          <p>
+            M. Bob Dupont et M. Tom Martin, co-fondateurs et co-gérants de
+            Canopées SAS.
+          </p>
+          <h3>Contact</h3>
+          <p>
+            Téléphone : <a href="tel:0561000000">05 61 00 00 00</a><br />
+            Email : <a href="mailto:contact@canopees.fr">contact@canopees.fr</a>
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>2. Hébergement</h2>
+          <p>Ce site est hébergé par :</p>
+          <p>
+            <strong>OVH SAS</strong><br />
+            2 rue Kellermann<br />
+            59100 Roubaix<br />
+            France<br />
+            Tél. : +33 9 72 10 10 07<br />
+            Site :
+            <a href="https://www.ovh.com" target="_blank" rel="noopener"
+              >www.ovh.com</a
+            >
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>3. Propriété intellectuelle</h2>
+          <p>
+            L'ensemble du contenu de ce site (textes, images, graphismes, logo,
+            icônes, sons, logiciels…) est la propriété exclusive de Canopées SAS
+            ou de ses partenaires, et est protégé par les lois françaises et
+            internationales relatives à la propriété intellectuelle.
+          </p>
+          <p>
+            Toute reproduction, représentation, modification, publication,
+            adaptation de tout ou partie des éléments du site, quel que soit le
+            moyen ou le procédé utilisé, est interdite, sauf autorisation écrite
+            préalable de Canopées SAS.
+          </p>
+          <p>
+            Toute exploitation non autorisée du site ou de l'un quelconque des
+            éléments qu'il contient sera considérée comme constitutive d'une
+            contrefaçon et poursuivie conformément aux dispositions des articles
+            L.335-2 et suivants du Code de Propriété Intellectuelle.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>4. Données personnelles</h2>
+          <p>
+            Les informations recueillies via le formulaire de contact sont
+            enregistrées dans un fichier informatisé par Canopées SAS aux fins
+            de traitement des demandes de devis et de contact.
+          </p>
+          <p>
+            Conformément au Règlement Général sur la Protection des Données
+            (RGPD – Règlement UE 2016/679) et à la loi Informatique et Libertés
+            du 6 janvier 1978 modifiée, vous disposez des droits suivants :
+          </p>
+          <p>
+            — Droit d'accès à vos données personnelles<br />
+            — Droit de rectification ou d'effacement<br />
+            — Droit à la limitation du traitement<br />
+            — Droit d'opposition au traitement<br />
+            — Droit à la portabilité de vos données
+          </p>
+          <p>
+            Pour exercer ces droits ou pour toute question sur le traitement de
+            vos données, vous pouvez contacter notre délégué à la protection des
+            données à l'adresse :
+            <a href="mailto:contact@canopees.fr">contact@canopees.fr</a>.
+          </p>
+          <p>
+            Les données sont conservées pour une durée de 3 ans à compter du
+            dernier contact. Elles ne sont ni vendues ni cédées à des tiers. En
+            cas de réclamation, vous pouvez saisir la
+            <a href="https://www.cnil.fr" target="_blank" rel="noopener"
+              >Commission Nationale de l'Informatique et des Libertés (CNIL)</a
+            >.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>5. Cookies</h2>
+          <p>
+            Ce site utilise uniquement des cookies techniques strictement
+            nécessaires à son fonctionnement. Aucun cookie publicitaire, de
+            tracking ou de profilage n'est utilisé. Aucun consentement préalable
+            n'est donc requis pour ces cookies.
+          </p>
+          <p>
+            Vous pouvez à tout moment désactiver les cookies dans les paramètres
+            de votre navigateur, sachant que certaines fonctionnalités du site
+            pourraient en être affectées.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>6. Responsabilité</h2>
+          <p>
+            Canopées SAS s'efforce de fournir sur ce site des informations aussi
+            précises que possible. Toutefois, elle ne pourra être tenue
+            responsable des omissions, des inexactitudes et des carences dans la
+            mise à jour, qu'elles soient de son fait ou du fait des tiers
+            partenaires qui lui fournissent ces informations.
+          </p>
+          <p>
+            Canopées SAS ne pourra être tenue responsable des dommages directs
+            et indirects causés au matériel de l'utilisateur lors de l'accès au
+            site, et résultant soit de l'utilisation d'un matériel ne répondant
+            pas aux spécifications techniques requises, soit de l'apparition
+            d'un bug ou d'une incompatibilité.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>7. Liens hypertextes</h2>
+          <p>
+            Ce site peut contenir des liens hypertextes vers d'autres sites.
+            Canopées SAS ne dispose d'aucun moyen pour contrôler les sites en
+            connexion avec le sien et ne répond pas de la disponibilité de tels
+            sites et sources externes, ni ne la garantit.
+          </p>
+          <p>
+            La mise en place de liens hypertextes vers le site canopees.fr est
+            autorisée sans demande d'autorisation préalable, à condition que le
+            lien ne soit pas utilisé à des fins commerciales ou publicitaires et
+            que la page source ne soit pas un site au contenu illicite.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>8. Droit applicable</h2>
+          <p>
+            Tout litige en relation avec l'utilisation du site canopees.fr est
+            soumis au droit français. Il est fait attribution exclusive de
+            juridiction aux tribunaux compétents de Toulouse.
+          </p>
+          <p><em>Dernière mise à jour : janvier 2024</em></p>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img
+                src="images/logo.png"
+                alt="Canopées"
+                style="height: 52px; width: auto"
+              />
+            </div>
+            <p>Espaces verts créés avec passion depuis 2020.</p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Facebook"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                  /></svg
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                  />
+                  <circle cx="4" cy="4" r="2" /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+              <li><a href="prestations.html">Prestations</a></li>
+              <li><a href="tarifs.html">Tarifs</a></li>
+              <li><a href="contact.php">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Prestations</h4>
+            <ul>
+              <li><a href="prestations.html">Conception espaces verts</a></li>
+              <li><a href="prestations.html">Entretien jardins</a></li>
+              <li><a href="prestations.html">Taille des haies</a></li>
+              <li><a href="prestations.html">Élagage & abattage</a></li>
+              <li><a href="prestations.html">Valorisation déchets verts</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <address>
+              <p>12 Allée des Jardins</p>
+              <p>31000 Toulouse</p>
+              <p><a href="tel:0561000000">05 61 00 00 00</a></p>
+              <p>
+                <a href="mailto:contact@canopees.fr">contact@canopees.fr</a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© 2026 Canopées. Tous droits réservés.</p>
+          <div class="footer-legal">
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="cgu.html">CGU</a>
+            <a href="cgv.html">CGV</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
